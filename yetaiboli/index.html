@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS 26 液态玻璃效果</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <!-- 动态背景层 -->
+        <div class="background-layer"></div>
+        
+        <!-- 主内容区域 -->
+        <main class="main-content">
+            <!-- 液态玻璃卡片 -->
+            <section class="glass-card">
+                <h1>iOS 26 液态玻璃效果</h1>
+                <p>这是使用HTML/CSS/JavaScript实现的iOS 26液态玻璃效果演示</p>
+                <div class="glass-button-group">
+                    <button class="glass-button">主要按钮</button>
+                    <button class="glass-button secondary">次要按钮</button>
+                </div>
+            </section>
+            
+            <!-- 控制面板 -->
+            <section class="glass-control-panel">
+                <h2>控制面板</h2>
+                <div class="control-group">
+                    <label for="blur-range">模糊程度</label>
+                    <input type="range" id="blur-range" min="0" max="30" value="15">
+                    <span id="blur-value">15px</span>
+                </div>
+                <div class="control-group">
+                    <label for="opacity-range">透明度</label>
+                    <input type="range" id="opacity-range" min="0" max="100" value="70">
+                    <span id="opacity-value">70%</span>
+                </div>
+                <div class="control-group">
+                    <label for="color-picker">玻璃色调</label>
+                    <input type="color" id="color-picker" value="#ffffff">
+                </div>
+            </section>
+            
+            <!-- 液态玻璃通知中心 -->
+            <section class="glass-notification-center">
+                <h2>通知中心</h2>
+                <div class="notification-item">
+                    <div class="notification-icon">📱</div>
+                    <div class="notification-content">
+                        <h3>系统更新</h3>
+                        <p>iOS 26.1 现已可用，包含多项液态玻璃效果改进</p>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-icon">⚙️</div>
+                    <div class="notification-content">
+                        <h3>设置提醒</h3>
+                        <p>您可以在设置中调整液态玻璃的透明度</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 液态玻璃控制中心 -->
+            <section class="glass-control-center">
+                <h2>控制中心</h2>
+                <div class="control-grid">
+                    <div class="control-item">
+                        <div class="control-icon">🔆</div>
+                        <span>亮度</span>
+                    </div>
+                    <div class="control-item">
+                        <div class="control-icon">🔊</div>
+                        <span>音量</span>
+                    </div>
+                    <div class="control-item">
+                        <div class="control-icon">📶</div>
+                        <span>网络</span>
+                    </div>
+                    <div class="control-item">
+                        <div class="control-icon">🔋</div>
+                        <span>电池</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
